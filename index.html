@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignment</title>
+    <link rel="stylesheet" href="./index.css" class="rel">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="route">
+            <label for="route">Route</label>
+            <select name="routeName" id="route">
+                <option value="">Select Route</option>
+                <option value="">Route-2</option>
+                <option value="">Route-3</option>
+            </select>
+        </div>
+        <div class="radioButtonContainer">
+            <form>
+                <label style="margin-right: 30px;">Message Format</label>
+                <label style="margin-right: 50px;" for="radioNumber">
+                    <input type="radio" name="radioButton" id="radioNumber" value="Number"/>
+                    Number
+                </label>
+                <label style="margin-right: 50px;" for="radioGroups">
+                    <input type="radio" name="radioButton" id="radioGroups" value="Groups"/>
+                    Groups
+                </label>
+                <label for="radioCSV">
+                    <input type="radio" name="radioButton" id="radioCSV" value="CSVFile"/>
+                    CSV/XLS/TXT
+                </label>
+            </form>
+        </div>
+        <div class="rowContainer cg-20">
+
+                <div class="instructions numClass columnContainer">
+                    <label><span style="float: right;">Numbers</span></label>
+                    <label>Separated by space & newline <br><span style="float: right;">Comma (,) wont accepted</span></label>
+                </div>
+                <div class="textArea numClassArea">
+                    <textarea rows="14" placeholder="Separated by newline"></textarea>
+                    <div class="smsCounter numCounter">
+                        <span style="background-color: rgb(255, 188, 2);">0/25000 Number(s)</span>
+                    </div>
+                </div>
+
+                <div class="instructions groupClass columnContainer displayNone">
+                    <label><span style="float: right;">Select Group</span></label>
+                </div>
+                <div class="textArea groupClassArea displayNone">
+                    <label for="selectAll">
+                        <input type="checkbox" name="selectAll" id="selectAll">
+                        Select All
+                    </label> <br>
+                    <label for="selectOne">
+                        <input type="checkbox" name="selectOne" id="selectOne">
+                        Test[2]
+                    </label> <br>
+                    <label for="selectTwo">
+                        <input type="checkbox" name="selectTwo" id="selectTwo">
+                        Test new[2]
+                    </label> <br>
+                    <div class="groupSelect">
+                        <label>Please Select at least One</label>
+                    </div>
+                    <!-- <textarea rows="14" placeholder="Separated by newline"></textarea> -->
+                    <!-- <div class="smsCounter numCounter">
+                        <span style="background-color: rgb(255, 188, 2);">0/25000 Number(s)</span>
+                    </div> -->
+                </div>
+
+                <div class="instructions fileClass columnContainer displayNone">
+                    <label><span style="float: right; margin-left:60px">Upload XLS</span></label>
+                    <!-- <label>Separated by space & newline <br><span style="float: right;">Comma (,) wont accepted</span></label> -->
+                </div>
+                <div class="textArea fileClassArea displayNone">
+                    <!-- <textarea rows="14" placeholder="Separated by newline"></textarea> -->
+                    <!-- <label for="file"></label> -->
+                    <input type="file" name="file" id="file">
+                    <div class="fileFormateBox">
+                        <!-- <span style="background-color: rgb(255, 188, 2);">0/25000 Number(s)</span> -->
+                        <div>
+                            <label for="fileFormate">File Format Supported</label>
+                        </div>
+                        <div>
+                            <label for="fileFormateName">XLS|TXT|CSV</label>
+                        </div>
+                        <div>
+                            <button type="button">Download Sample Files</button>
+                        </div>
+                        <div>
+                            <label>15 MB MAX</label>
+                        </div>
+                    </div>
+                </div>
+            <div class="columnContainer previewSMScontainer rg-10">
+                <div class="rowContainer smsCounter">
+                    <!-- <button type="button">Text</button>
+                    <button type="button" style="margin-left: 10px;">Unicode</button> -->
+                    <!-- <div class="smsCounter"> -->
+                        <span style="background-color: rgb(255, 188, 2);">✔ Text</span>
+                        <span style="margin-left: 10px;">Unicode</span>
+                    <!-- </div> -->
+                    <select name="ApprovedTemplateName" class="approvedTemplateName">
+                        <option value="">Approved Template</option>
+                        <option value="">Template-1</option>
+                        <option value="">Template-2</option>
+                    </select>
+                </div>
+                <label>SMS message (preview SMS before send)</label>
+                <div class="smsContainer">
+                    <textarea rows="9" class="taw" readonly></textarea>
+                </div>
+                <div class="smsCounter">
+                    <span>0 Characters</span>
+                    <span style="margin-left: 10px; background-color: rgb(255, 188, 2);">0 SMS Count</span>
+                </div>
+            </div>
+        </div>
+        <div class="radioButtonContainer">
+            <label>Schedule SMS</label>
+            <label>
+                <input type="checkbox" name="radio" checked/>
+                Schedule SMS (Message will be sent on selected date and time)
+            </label>
+        </div>
+        <div class="smsDateTime">
+            <label for="scheduleDate">Schedule SMS Date</label>
+            <input type="date" />
+            <label for="scheduleDate">Schedule SMS Time</label>
+            <input type="time" value="00:00" id="time"/>
+        </div>
+        <div>
+            <div class="smsCounter">
+                <button type="button">Send</button>
+                <button type="button">Preview SMS</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

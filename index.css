@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 580px;
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: rgb(211, 214, 216);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.route{
+    margin-left: 100px;
+}
+
+#route{
+    width: 300px;
+    height: 30px;
+    border-color: rgb(8, 140, 228);
+    border-radius: 50px;
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #D3D6D8;
+}
+
+label{
+    font-weight:500;
+}
+
+.radioButtonContainer [type='radio']{
+    width: 20px;
+    height: 20px;
+    align-content: center;
+    /* color: #D3D6D8; */
+}
+
+.radioButtonContainer [type='radio']:hover{
+    cursor: pointer;
+}
+
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+}
+
+.cg-20{
+    column-gap: 20px;
+}
+
+.rg-10{
+    row-gap: 10px;
+}
+
+.columnContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.instructions{
+    row-gap: 20px;
+}
+
+textarea{
+    resize: none;
+    width: 250px;
+    padding: 10px;
+    border-color: rgb(8, 140, 228);
+    border-radius: 10px;
+    background-color: #D3D6D8;
+}
+
+/* text area width = taw */
+.taw{
+    width: 100%;
+}
+
+.previewSMScontainer{
+    /* border: 1px solid black; */
+    width: 600px;
+    height: auto;
+}
+.approvedTemplateName{
+    width: 300px;
+    height: 30px;
+    border-color: rgb(8, 140, 228);
+    border-radius: 50px;
+    margin-left: 160px;
+    padding: 5px;  
+    background-color: #D3D6D8;  
+}
+
+button{
+    width: auto;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    text-align: center;
+    padding: 5px;
+    /* font-weight: bold; */
+    font-size:medium;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+.smsCounter > button{
+    background-color: rgb(8, 140, 228);
+    margin-left: 230px;
+}
+.smsCounter > button:nth-child(2){
+    background-color: rgb(255, 2, 65);
+    /* margin-left: 230px; */
+    margin-left: 10px;
+}
+.smsCounter > button:nth-child(2):hover{
+    background-color: blue;
+    /* margin-left: 230px; */
+}
+.smsCounter > button:nth-child(1):hover{
+    background-color: blue;
+    /* margin-left: 230px; */
+}
+
+
+.smsCounter > span{
+    width: auto;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(8, 140, 228);
+
+}
+.numCounter{
+    /* background-color: orange; */
+    margin-top: 10px;
+}
+
+input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    margin:0px 20px 0px 20px;
+}
+
+label[for='scheduleDate']{
+    margin-left: 150px;
+}
+
+.smsDateTime > input[type='date']{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(8, 140, 228);
+    padding: 10px;
+    background-color: #D3D6D8;
+}
+.smsDateTime > input[type='time']{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #088ce4;
+    padding: 10px;
+    background-color: #D3D6D8;
+}
+
+.visibilityHidden{
+    visibility: hidden;
+}
+.visibilitysVisible{
+    visibility: visible;
+}
+.displayNone{
+    display: none;
+}
+.displayFlex{
+    display: flex;
+}
+
+.groupSelect{
+    background-color: rgb(255, 0, 0);
+    width: 355px;
+    margin-left:20px;
+    margin-top: 20px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type='file']{
+    border: 1px solid #088ce4;
+    width: 300px;
+    height: 30px;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+input[type='file']:hover{
+    cursor: pointer;
+    background-color: blue;
+    box-shadow: rgba(0, 0, 255, 0.56) 0px 22px 70px 4px;
+}
+
+.fileFormateBox{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 300px;
+    border: 1px solid #088ce4;
+    margin-top: 20px;
+    /* padding: 10px; */
+    /* row-gap: 10px; */
+    align-items: center;
+    border-radius: 10px;
+    /* column-gap: 10   px; */
+}
+.fileFormateBox > div:nth-child(1){
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    /* align-items:center; */
+    height: 40px;
+    background-color: #088ce4;
+    border-radius: 10px 10px 0px 0px;
+}
+.fileFormateBox > div:nth-child(2){
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+    background-color: #2252b8b0;
+    /* border-radius: 10px 10px 0px 0px; */
+}
+.fileFormateBox > div:nth-child(3){
+    width: 100%;
+    text-align: center;
+    /* padding-top: 5px; */
+    height: 40px;
+    /* background-color: #FFBC02; */
+    /* border-radius: 10px 10px 0px 0px; */
+}
+.fileFormateBox > div:nth-child(3) button{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background-color: #FFBC02;
+}
+.fileFormateBox > div:nth-child(3) button:hover{
+    background-color: blue;
+}
+.fileFormateBox > div:nth-child(4){
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+    background-color: #2252b8b0;
+    border-radius: 0px 0px 10px 10px;
+}
